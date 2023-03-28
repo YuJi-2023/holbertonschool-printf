@@ -62,4 +62,3 @@ File(s): [`man_3_printf.man`](./man_3_printf.man)\
 ## Author
 * **Sourabh Beniwal** - [bsour](github.com/bsour)
 * **Yu Ji** -[YuJi-2023](github.com/YuJi-2023)
-                                                                                           1,1           Top
