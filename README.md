@@ -20,6 +20,13 @@ Introduction to structures and type definitions in C.
 * All your header files should be include guarded
 * Note that we will not provide the _putchar function for this project
 ---
+### Flow Chart representing Algorithm
+![Screen Shot 2023-03-28 at 2 30 40 pm](https://user-images.githubusercontent.com/109330225/228120775-f2a03f4f-bf02-48b9-9ca6-ee2ff446a031.png)
+
+
+
+
+
 
 ## Mandatory Tasks
 
@@ -62,4 +69,3 @@ File(s): [`man_3_printf.man`](./man_3_printf.man)\
 ## Author
 * **Sourabh Beniwal** - [bsour](github.com/bsour)
 * **Yu Ji** -[YuJi-2023](github.com/YuJi-2023)
-                                                                                           1,1           Top
