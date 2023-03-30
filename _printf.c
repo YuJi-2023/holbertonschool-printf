@@ -44,7 +44,7 @@ int _printf(const char *format, ...)
 		return (-1);
 	while (format[i] != '\0')
 	{
-		if (format[i] == '%')
+		if (format[i] == '%' && _match_specifier(format[i + 1]) == 1)
 		{
 			x = 0;
 			while (format_print[x].f != NULL)
@@ -55,10 +55,7 @@ int _printf(const char *format, ...)
 				}
 				x = x + 1;
 			}
-			if (_match_specifier(format[i + 1]) == 1)
-				i = i + 2;
-			else
-				return (-1);
+			i = i + 2;
 		} else
 		{
 			_putchar(format[i]);
