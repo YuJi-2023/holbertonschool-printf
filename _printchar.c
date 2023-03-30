@@ -2,7 +2,7 @@
 #include <unistd.h>
 /**
  * _printchar - print out char to stdout
- *
+ * @args: input parameter ot type va_list
  * Return: 1
  */
 int _printchar(va_list args)

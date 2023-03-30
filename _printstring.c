@@ -1,7 +1,8 @@
 #include "main.h"
 #include <stddef.h>
-/*
+/**
  * _printstring - print out strings
+ * @args: input paramter of type va_list
  * Return: length of the string
  *
  */
