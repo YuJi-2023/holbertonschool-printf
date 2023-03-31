@@ -13,7 +13,7 @@ typedef struct type
 } type_t;
 
 int _putchar(char c);
-int _printnum_orderly(int i, int j);
+int _printnum_orderly(long int i, int j);
 int _printchar(va_list args);
 int _printstring(va_list args);
 int _printsign(va_list args);

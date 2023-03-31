@@ -8,9 +8,9 @@
  * @j: current count of digits printed
  * Return: the number of digits printed
  */
-int _printnum_orderly(int i, int j)
+int _printnum_orderly(long int i, int j)
 {
-	int mod_result;
+	long int mod_result;
 	int digit_printed;
 
 	if (i == 0)
@@ -30,20 +30,25 @@ int _printnum_orderly(int i, int j)
  */
 int _printnum(va_list args)
 {
-	int num;
+	long int num;
 	int digits;
 
 	num = va_arg(args, int);
-	if (num < 0)
+	if (num > 0)
 	{
-		num = (-1) * num;
-		_putchar('-');
 		digits = _printnum_orderly(num, 0);
-		digits = digits + 1;
+	}
+	else if (num == 0)
+	{
+		_putchar('0');
+		digits = 1;
 	}
 	else
 	{
-		digits = _printnum_orderly(num, 0);
+		_putchar('-');
+		num = -1 * num;
+                digits = _printnum_orderly(num, 0);
+                digits = digits + 1;
 	}
 	return (digits);
 }
