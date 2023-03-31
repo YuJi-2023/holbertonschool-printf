@@ -9,7 +9,7 @@
  */
 int _match_specifier(char c)
 {
-	char s[3] = {'c', 's', '%'};
+	char s[5] = {'c', 's', '%', 'd', 'i'};
 	int i;
 
 	i = 0;
@@ -36,6 +36,8 @@ int _printf(const char *format, ...)
 		{"c", _printchar},
 		{"s", _printstring},
 		{"%", _printsign},
+		{"d", _printnum},
+		{"i", _printnum},
 		{NULL, NULL}
 	};
 

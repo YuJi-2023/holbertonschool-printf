@@ -13,9 +13,11 @@ typedef struct type
 } type_t;
 
 int _putchar(char c);
+int _printnum_orderly(int i, int j);
 int _printchar(va_list args);
 int _printstring(va_list args);
 int _printsign(va_list args);
+int _printnum(va_list args);
 int _match_specifier(char c);
 int _printf(const char *format, ...);
 #endif
