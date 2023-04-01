@@ -1,0 +1,48 @@
+.TH _printf "April 2023" "_printf User Manual"
+
+.SH NAME
+_printf - print formatted output
+
+.SH SYNOPSIS
+#include "main.h"
+
+int _printf(const char *format, ...);
+
+.SH DESCRIPTION
+The _printf function produces output according to a format string. The format string can include format specifiers, which are replaced by the values of the corresponding arguments.
+
+The function returns the number of characters printed.
+
+.SH RETURN VALUE
+On success, the number of characters printed is returned. On failure, a negative value is returned.
+
+.SH EXAMPLES
+Here are some examples of how to use the _printf function:
+
+Print a string:
+.B
+_printf("Hello, world!\n");
+
+Print a character
+.B
+char c = 'A';
+_printf("The character is: %c\n", c);
+// Output: The character is: A
+
+Print an integer:
+.B
+int n = 42;
+_printf("The answer is %d\n", n);
+
+.SH SEE ALSO
+printf(3), fprintf(3), sprintf(3)
+
+.SH AUTHOR
+The _printf function was written by Sophia Ji and Sourabh Beniwal at Holberton School Australia.
+
+.SH BUGS
+There are no known bugs in the _printf function.
+Some Betty Style formatting errors only
+
+.SH COPYRIGHT
+Copyright (C) 2023 by Holberton School Australia.
