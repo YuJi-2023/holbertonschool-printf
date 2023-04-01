@@ -47,8 +47,8 @@ int _printnum(va_list args)
 	{
 		_putchar('-');
 		num = -1 * num;
-                digits = _printnum_orderly(num, 0);
-                digits = digits + 1;
+		digits = _printnum_orderly(num, 0);
+		digits = digits + 1;
 	}
 	return (digits);
 }
